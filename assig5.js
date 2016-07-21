@@ -12,14 +12,25 @@ var pioneerSquare = {
             return Math.ceil(cNeed)
         },
 
-        lastFunction: function() {
-            var listValues = new Array(0)
-            for (i = 10; i < 19; i++) {
-                listValues.push(this.cookiesNeed())
-            }
+        thirdFunction: function() {
+            var listValues = new Array(0);
+            for (var i = 10; i < 19; i++) {
+                listValues.push(this.cookiesNeed());
+              }
           return listValues
-        }
+        },
+
+      //
+      //   lastFunction: function() {
+      //     while (var i = 0; i <= 8; i++) {
+      //       console.log()
+      //
+      //     }
+      // }
     }
+    document.getElementById("psq");
+    document.innerHTML += "<td>"+pioneerSquare.cookiesNeed()+"</td>"
+
     // var pdx = {
     //     minCustomer: 6;maxCustomer: 24;avgCS: 1.2
     // }
