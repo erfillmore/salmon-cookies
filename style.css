@@ -1,0 +1,37 @@
+
+.{font-family: 'Lora', serif;}
+
+font-weight: bold;
+font-color: red;
+background-color;
+
+table, th, td {
+    border: 1px solid black;
+}
+
+#mainc {
+  border: 1px solid #000;
+    background-color: #012E12;
+    padding: 3em;
+    width: 5%;
+    color: #DADBE6;
+    text-align: center;
+}
+
+#secondc {
+  border: 1px solid #000;
+    background-color: #012E12;
+    padding: 3em;
+    width: 5%;
+    color: #DADBE6;
+    text-align: center;
+}
+
+#thirdc {
+  border: 1px solid #000;
+    background-color: #012E12;
+    padding: 3em;
+    width: 5%;
+    color: #DADBE6;
+    text-align: center;
+}
