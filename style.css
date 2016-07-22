@@ -1,17 +1,48 @@
 
 .{font-family: 'Lora', serif;}
 
-font-weight: bold;
-font-color: red;
-background-color;
 
-table, th, td {
-    border: 1px solid black;
+
+#css {
+    border: 0.1em solid black;
+    padding: 0.02em
+}
+
+table {
+  width: 22em;
+  display: inline-block;
+  vertical-align: middle;
+  align-items: center;
+  margin: 2em
+}
+
+section table {
+  width: 10em
+}
+
+h1 {
+  font-weight: bold;
+  color: #801515;
+  text-align: center;
+}
+
+h2 {
+  font-weight: bold;
+  color: #801515;
+}
+
+h3 {
+  font-weight: bold;
+  color: #801515;
+}
+
+a {
+  color: #550000
 }
 
 #mainc {
   border: 1px solid #000;
-    background-color: #012E12;
+    background-color: #FFAAAA;
     padding: 3em;
     width: 5%;
     color: #DADBE6;
@@ -20,7 +51,7 @@ table, th, td {
 
 #secondc {
   border: 1px solid #000;
-    background-color: #012E12;
+    background-color: #D46A6A;
     padding: 3em;
     width: 5%;
     color: #DADBE6;
@@ -29,7 +60,7 @@ table, th, td {
 
 #thirdc {
   border: 1px solid #000;
-    background-color: #012E12;
+    background-color: #801515;
     padding: 3em;
     width: 5%;
     color: #DADBE6;
