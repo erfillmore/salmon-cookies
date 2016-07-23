@@ -1,8 +1,6 @@
 
 .{font-family: 'Lora', serif;}
 
-
-
 #css {
     border: 0.1em solid black;
     padding: 0.02em
@@ -16,8 +14,12 @@ table {
   margin: 2em
 }
 
+table, th, td {
+  border: 0.1px solid black;
+}
+
 section table {
-  width: 10em
+  width: auto
 }
 
 h1 {
