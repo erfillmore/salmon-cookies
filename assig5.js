@@ -1,21 +1,17 @@
-var constructor = function(location,minCustomer,maxCustomer,avgCS, id) {
+var storeObject = function(location,minCustomer,maxCustomer,avgCS, id) {
 this.location = location
 this.minCustomer = minCustomer
 this.maxCustomer = maxCustomer
 this.avgCS = avgCS
 this.id = id
-}
-
-    randomCustomerPerHour: function(maxCustomer, minCustomer) {
+this.randomCustomerPerHour: function(maxCustomer, minCustomer) {
         return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer)) + this.minCustomer;
     },
-
-    cookiesNeed: function(rcpH, avgCS) {
+this.cookiesNeed: function(rcpH, avgCS) {
         var cNeed = this.randomCustomerPerHour() * this.avgCS;
         return Math.ceil(cNeed)
     },
-
-    thirdFunction: function() {
+this.thirdFunction: function() {
         var listValues = new Array(0);
         for (var i = 0; listValues.length < 9; i++) {
             listValues.push(this.cookiesNeed());
@@ -30,6 +26,10 @@ this.id = id
 
     }
 }
+
+var store = [
+  new storeObject("Pioneer Square",17, 88,5.2,"psq")
+]
 
 var pioneerSquare = {
     minCustomer: 17,
