@@ -1,7 +1,10 @@
-var pioneerSquare = {
-    minCustomer: 17,
-    maxCustomer: 88,
-    avgCS: 5.2,
+var constructor = function(location,minCustomer,maxCustomer,avgCS, id) {
+this.location = location
+this.minCustomer = minCustomer
+this.maxCustomer = maxCustomer
+this.avgCS = avgCS
+this.id = id
+}
 
     randomCustomerPerHour: function(maxCustomer, minCustomer) {
         return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer)) + this.minCustomer;
@@ -16,17 +19,22 @@ var pioneerSquare = {
         var listValues = new Array(0);
         for (var i = 0; listValues.length < 9; i++) {
             listValues.push(this.cookiesNeed());
-            document.getElementById("psq").innerHTML += "<td>" + listValues[i] + "</td>"
+            document.getElementById(id).innerHTML += "<td>" + listValues[i] + "</td>"
         }
         var total = listValues.reduce(add, 0);
 
         function add(a, b) {
             return a + b;
         }
-        document.getElementById("psq").innerHTML += "<td> Total =" + total + "</td>"
+        document.getElementById(id).innerHTML += "<td> Total =" + total + "</td>"
 
     }
 }
+
+var pioneerSquare = {
+    minCustomer: 17,
+    maxCustomer: 88,
+    avgCS: 5.2,
 pioneerSquare.thirdFunction()
 
 var pDX = {
